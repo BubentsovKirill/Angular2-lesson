@@ -1,0 +1,11 @@
+/*eсли родитель имеет такой класс, то применяется стиль к данному элемменту*/
+:host-context(.red) h2{
+    color: red;
+}
+/*обходим shadow dom*/
+:host /deep/ p {
+    text-decoration: underline;
+}
+p{
+    font-style: italic;
+}
