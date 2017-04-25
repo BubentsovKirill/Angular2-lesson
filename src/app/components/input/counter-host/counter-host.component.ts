@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-counter-host',
+  selector: 'fa-counter-host',
   templateUrl: './counter-host.component.html',
   styleUrls: ['./counter-host.component.css']
 })

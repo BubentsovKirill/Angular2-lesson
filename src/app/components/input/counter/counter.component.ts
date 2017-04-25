@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-counter',
+  selector: 'fa-counter',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css']
 })
-export class CounterComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class CounterComponent {
+    @Input() name: string = 'default name';
+    @Input() counterValue: number = 0;
+    @Input() counterStep: number = 1;
+    increment(){
+        this.counterValue = this.counterValue + this.counterStep;
+    }
 }

@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/index';
+import { LifecicleModule } from './lifecicle/lifecicle.module';
 import { routs } from "./app.routs";
 
 
@@ -18,6 +19,7 @@ import { routs } from "./app.routs";
     FormsModule,
     HttpModule,
     ComponentsModule,
+    LifecicleModule,
     RouterModule.forRoot(routs)
   ],
   providers: [],
